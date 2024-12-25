@@ -30,7 +30,7 @@ y = np_target  # Целевые значения
 # Split data into training and testing sets (80%/20%)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
 
-# Параметры для поиска (закомментировано для использования позже)
+# Параметры для поиска
 # param_grid = {
 #     'n_estimators': [100, 200, 300, 500, 700, 900, 1100],  # Количество деревьев
 #     'max_depth': [3, 5, 6, 10, 14, 18],  # Глубина дерева
@@ -59,16 +59,16 @@ xgb_model = xgb.XGBClassifier(
 xgb_model.fit(X_train, y_train)  # Обучаем модель XGBoost на обучающей выборке
 # Train the XGBoost model on the training data
 
-# # Инициализация GridSearchCV (закомментировано)
+# # Инициализация GridSearchCV
 # grid_search = GridSearchCV(estimator=model_xgb, param_grid=param_grid, cv=5, n_jobs=-1, verbose=1)
 #
 # # Обучение модели с использованием GridSearchCV
 # grid_search.fit(X_train, y_train)
 
-# Лучшие параметры модели (закомментировано)
+# Лучшие параметры модели
 # print("Лучшие параметры: ", grid_search.best_params_)
 
-# Использование лучшей модели для предсказания (закомментировано)
+# Использование лучшей модели для предсказания
 # best_model = grid_search.best_estimator_
 
 # Оценка точности модели XGBoost
