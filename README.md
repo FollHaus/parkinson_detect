@@ -86,7 +86,7 @@ xgb_model.fit(X_train, y_train)
 print(f'Точность на обучающей выборке: {xgb_model.score(X_train, y_train) * 100:.2f}%')
 print(f'Точность на тестовой выборке: {xgb_model.score(X_test, y_test) * 100:.2f}%')
 ```
-![image](https://github.com/user-attachments/assets/0f3ea467-04ff-466a-a49b-942628b63770)
+![image](https://github.com/user-attachments/assets/d9294bfd-47a3-4325-ad3a-14998ff64c9a)
 
 Оценивается точность модели XGBoost на обучающей и тестовой выборках.
 
@@ -118,7 +118,7 @@ accuracy = accuracy_score(y_test, y_pred)
 print(f'Точность при использовании нескольких моделей: {accuracy * 100:.2f}%')
 ```
 На скриншоте видно, что мы достигли заметного улучшения в точности наших предсказаний.
-![image](https://github.com/user-attachments/assets/64846028-6e34-4c43-bdc0-7ea66258074a)
+![image](https://github.com/user-attachments/assets/959f7dc3-7acb-4b73-9195-b79339a938bd)
 
 Оценивается точность модели стекинга на тестовой выборке. Выводится точность классификации.
 
